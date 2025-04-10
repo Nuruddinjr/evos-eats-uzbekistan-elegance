@@ -4,6 +4,7 @@ export type Product = {
   name: string;
   description: string;
   price: number;
+  discountPercentage?: number;
   image: string;
   category: string;
   isFeatured?: boolean;
@@ -30,6 +31,7 @@ export const products: Product[] = [
     name: "Чизбургер",
     description: "Сочная говяжья котлета с сыром и соусом",
     price: 29000,
+    discountPercentage: 15,
     image: "/placeholder.svg",
     category: "Бургеры",
     isFeatured: true
@@ -48,6 +50,7 @@ export const products: Product[] = [
     name: "Пепперони",
     description: "Классическая пицца с пепперони и моцареллой",
     price: 65000,
+    discountPercentage: 10,
     image: "/placeholder.svg",
     category: "Пицца"
   },
@@ -65,6 +68,7 @@ export const products: Product[] = [
     name: "Лаваш с курицей",
     description: "Куриное филе с овощами в лаваше",
     price: 32000,
+    discountPercentage: 20,
     image: "/placeholder.svg",
     category: "Лаваши"
   },
@@ -81,6 +85,7 @@ export const products: Product[] = [
     name: "Картофель фри",
     description: "Хрустящий картофель",
     price: 15000,
+    discountPercentage: 5,
     image: "/placeholder.svg",
     category: "Снеки",
     isFeatured: true
