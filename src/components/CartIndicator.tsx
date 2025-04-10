@@ -30,8 +30,8 @@ export function CartIndicator({ items }: CartIndicatorProps) {
       <ShoppingBag size={18} />
       {totalItems > 0 && (
         <div className="flex flex-col items-start">
-          <span className="text-xs font-medium leading-none">{totalItems} шт.</span>
-          <span className="text-xs font-bold leading-none">{formattedPrice} сум</span>
+          <span className="text-xs font-medium leading-none">{totalItems} dona</span>
+          <span className="text-xs font-bold leading-none">{formattedPrice} so'm</span>
         </div>
       )}
     </button>

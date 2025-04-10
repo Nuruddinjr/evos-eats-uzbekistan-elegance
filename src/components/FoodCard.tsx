@@ -31,7 +31,7 @@ export function FoodCard({ product, className }: FoodCardProps) {
   }).format(discountedPrice) : null;
 
   const handleAddToCart = () => {
-    toast.success(`${name} добавлен в корзину`);
+    toast.success(`${name} savatga qo'shildi`);
   };
 
   return (
@@ -60,11 +60,11 @@ export function FoodCard({ product, className }: FoodCardProps) {
           <div className="flex items-center gap-2">
             {discountedPrice ? (
               <>
-                <span className="font-bold text-gray-900">{formattedDiscountedPrice} сум</span>
-                <span className="text-gray-500 text-sm line-through">{formattedOriginalPrice} сум</span>
+                <span className="font-bold text-gray-900">{formattedDiscountedPrice} so'm</span>
+                <span className="text-gray-500 text-sm line-through">{formattedOriginalPrice} so'm</span>
               </>
             ) : (
-              <span className="font-bold text-gray-900">{formattedOriginalPrice} сум</span>
+              <span className="font-bold text-gray-900">{formattedOriginalPrice} so'm</span>
             )}
           </div>
           <ButtonCustom 
@@ -72,7 +72,7 @@ export function FoodCard({ product, className }: FoodCardProps) {
             className="w-full bg-evos hover:bg-evos-dark text-sm py-1"
             onClick={handleAddToCart}
           >
-            В корзину
+            Savatga
           </ButtonCustom>
         </div>
       </div>

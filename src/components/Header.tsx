@@ -17,7 +17,7 @@ export function Header() {
           </Button>
           <div className="flex flex-col">
             <h1 className="font-bold text-xl text-evos">EVOS</h1>
-            <p className="text-xs text-gray-500">Ташкент, Узбекистан</p>
+            <p className="text-xs text-gray-500">Toshkent, O'zbekiston</p>
           </div>
         </div>
         
@@ -37,7 +37,7 @@ export function Header() {
           <div className="relative">
             <input
               type="text"
-              placeholder="Поиск..."
+              placeholder="Qidirish..."
               className="w-full py-2 px-4 bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-evos/50"
               autoFocus
             />

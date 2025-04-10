@@ -17,86 +17,86 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { id: 1, name: "Бургеры", icon: "🍔" },
-  { id: 2, name: "Пицца", icon: "🍕" },
-  { id: 3, name: "Лаваши", icon: "🌯" },
-  { id: 4, name: "Напитки", icon: "🥤" },
-  { id: 5, name: "Снеки", icon: "🍟" },
-  { id: 6, name: "Десерты", icon: "🍰" }
+  { id: 1, name: "Burgerlar", icon: "🍔" },
+  { id: 2, name: "Pitsa", icon: "🍕" },
+  { id: 3, name: "Lavashlar", icon: "🌯" },
+  { id: 4, name: "Ichimliklar", icon: "🥤" },
+  { id: 5, name: "Sneklar", icon: "🍟" },
+  { id: 6, name: "Shirinliklar", icon: "🍰" }
 ];
 
 export const products: Product[] = [
   {
     id: 1,
-    name: "Чизбургер",
-    description: "Сочная говяжья котлета с сыром и соусом",
+    name: "Chizburger",
+    description: "Mazali mol go'shti kotleti pishloq va sous bilan",
     price: 29000,
     discountPercentage: 15,
     image: "/placeholder.svg",
-    category: "Бургеры",
+    category: "Burgerlar",
     isFeatured: true
   },
   {
     id: 2,
-    name: "Двойной Гамбургер",
-    description: "Двойная порция мяса с овощами",
+    name: "Ikkitalik Gamburger",
+    description: "Ikki porsiya go'sht sabzavotlar bilan",
     price: 39000,
     image: "/placeholder.svg",
-    category: "Бургеры",
+    category: "Burgerlar",
     isFeatured: true
   },
   {
     id: 3,
-    name: "Пепперони",
-    description: "Классическая пицца с пепперони и моцареллой",
+    name: "Pepperoni",
+    description: "Klassik pepperoni pitsasi motsarella bilan",
     price: 65000,
     discountPercentage: 10,
     image: "/placeholder.svg",
-    category: "Пицца"
+    category: "Pitsa"
   },
   {
     id: 4,
-    name: "Маргарита",
-    description: "Томатный соус, моцарелла и базилик",
+    name: "Margarita",
+    description: "Pomidor sousi, motsarella va rayhon",
     price: 55000,
     image: "/placeholder.svg",
-    category: "Пицца",
+    category: "Pitsa",
     isFeatured: true
   },
   {
     id: 5,
-    name: "Лаваш с курицей",
-    description: "Куриное филе с овощами в лаваше",
+    name: "Tovuqli lavash",
+    description: "Tovuq filesi sabzavotlar bilan lavashda",
     price: 32000,
     discountPercentage: 20,
     image: "/placeholder.svg",
-    category: "Лаваши"
+    category: "Lavashlar"
   },
   {
     id: 6,
-    name: "Кола 0.5л",
-    description: "Газированный напиток",
+    name: "Kola 0.5l",
+    description: "Gazlangan ichimlik",
     price: 11000,
     image: "/placeholder.svg",
-    category: "Напитки"
+    category: "Ichimliklar"
   },
   {
     id: 7,
-    name: "Картофель фри",
-    description: "Хрустящий картофель",
+    name: "Kartoshka fri",
+    description: "Xrustall kartoshka",
     price: 15000,
     discountPercentage: 5,
     image: "/placeholder.svg",
-    category: "Снеки",
+    category: "Sneklar",
     isFeatured: true
   },
   {
     id: 8,
-    name: "Мороженое",
-    description: "Ванильное мороженое с шоколадом",
+    name: "Muzqaymoq",
+    description: "Vanilli muzqaymoq shokolad bilan",
     price: 18000,
     image: "/placeholder.svg",
-    category: "Десерты"
+    category: "Shirinliklar"
   }
 ];
 

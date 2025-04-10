@@ -7,8 +7,8 @@ import { products } from "@/data/mockData";
 import { Percent } from "lucide-react";
 
 const Index = () => {
-  const burgers = products.filter(product => product.category === "Бургеры");
-  const pizzas = products.filter(product => product.category === "Пицца");
+  const burgers = products.filter(product => product.category === "Burgerlar");
+  const pizzas = products.filter(product => product.category === "Pitsa");
 
   // Calculate discounted products
   const discountedProducts = products.filter(product => product.discountPercentage);
@@ -21,11 +21,11 @@ const Index = () => {
         {/* Hero Banner */}
         <div className="relative h-40 bg-gradient-to-r from-evos to-evos-light overflow-hidden flex items-center">
           <div className="container px-4">
-            <h2 className="text-white text-2xl font-bold max-w-[70%]">Вкусная еда с быстрой доставкой</h2>
+            <h2 className="text-white text-2xl font-bold max-w-[70%]">Mazali taomlar tez yetkazib berish bilan</h2>
             {hasDiscounts && (
               <p className="bg-white/20 text-white mt-2 text-sm max-w-max px-3 py-1 rounded-full flex items-center gap-1">
                 <Percent size={14} />
-                Скидки до {maxDiscount}%
+                {maxDiscount}% gacha chegirmalar
               </p>
             )}
           </div>
@@ -41,11 +41,11 @@ const Index = () => {
         <section className="py-4">
           <div className="container px-4">
             <div className="flex items-center gap-2 mb-4">
-              <h2 className="font-bold text-xl text-gray-900">Бургеры</h2>
+              <h2 className="font-bold text-xl text-gray-900">Burgerlar</h2>
               {burgers.some(burger => burger.discountPercentage) && (
                 <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full flex items-center gap-1">
                   <Percent size={12} />
-                  Скидки
+                  Chegirmalar
                 </span>
               )}
             </div>
@@ -61,11 +61,11 @@ const Index = () => {
         <section className="py-4">
           <div className="container px-4">
             <div className="flex items-center gap-2 mb-4">
-              <h2 className="font-bold text-xl text-gray-900">Пицца</h2>
+              <h2 className="font-bold text-xl text-gray-900">Pitsa</h2>
               {pizzas.some(pizza => pizza.discountPercentage) && (
                 <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full flex items-center gap-1">
                   <Percent size={12} />
-                  Скидки
+                  Chegirmalar
                 </span>
               )}
             </div>
