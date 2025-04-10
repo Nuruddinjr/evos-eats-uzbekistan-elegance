@@ -1,5 +1,4 @@
 
-import { Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { ButtonCustom } from "@/components/ui/button-custom";
@@ -40,14 +39,14 @@ export function FoodCard({ product, className }: FoodCardProps) {
         <h3 className="font-medium text-gray-900">{name}</h3>
         <p className="text-xs text-gray-500 mt-1 line-clamp-2 flex-1">{description}</p>
         
-        <div className="flex items-center justify-between mt-3">
+        <div className="flex flex-col gap-2 mt-3">
           <span className="font-bold text-gray-900">{formattedPrice} сум</span>
           <ButtonCustom 
             size="sm" 
-            className="h-8 w-8 p-0 rounded-full bg-evos hover:bg-evos-dark"
+            className="w-full bg-evos hover:bg-evos-dark text-sm py-1"
             onClick={handleAddToCart}
           >
-            <Plus size={16} />
+            В корзину
           </ButtonCustom>
         </div>
       </div>
